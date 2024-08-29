@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class OperatorPractice3 {
 	
-	public void practice1() {	// true 일 때 문제 있음
+	public void practice1() {	// true 일 때 문제 있음... -> 해결 완료
 
 		Scanner sc = new Scanner(System.in);
 		
