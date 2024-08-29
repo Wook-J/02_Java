@@ -38,7 +38,7 @@ public class VariableExample4 {
 		// 오버플로우 현상은 컴퓨터가 미리 예측할 수 없음!
 		// -> 개발자가 미리 예측해야 함
 		int i6 = 2_147_483_647;					// int의 최대값
-		int result6 = i6 + 1;					// -2147483648
+		int result6 = i6 + 1;					// -2147483648, int의 최소값
 		System.out.println(result6);
 	}
 }
