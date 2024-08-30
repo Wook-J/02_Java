@@ -33,6 +33,9 @@ public class OperatorPractice {		// 기능 제공용 클래스
 		
 		System.out.print("성별(남학생/여학생) : ");
 		String studentGender = sc.next();
+		// next() : 문자열(공백X)
+		// nextLine() : 문자열(띄어쓰기, 공백) // nextInt(), nextDouble() 등등 뒤에는 쓰면안된다.
+		// 굳이 필요하면 위쪽에 sc.nextLine()을 한번 더 써주면 됨!(입력버퍼 비워주는 역할, 개행문자 비우기)
 		
 		System.out.print("성적(소수점아래둘째자리까지) : ");
 		double studentGrade= sc.nextDouble();
