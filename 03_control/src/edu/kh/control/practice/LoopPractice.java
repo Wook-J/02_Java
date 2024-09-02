@@ -109,7 +109,7 @@ public class LoopPractice {
 		System.out.print("정수 입력 : ");
 		int inputNum = sc.nextInt();
 		
-		for(int i=inputNum; i>0; i--) {
+		for(int i=inputNum; i>=1; i--) {
 			for(int j=1; j<=i; j++) {
 				System.out.print("*");
 			}
@@ -190,10 +190,8 @@ public class LoopPractice {
 		int count = 0;
 		
 		for(int i=1; i<=inputNum; i++) {
-			if((i%2==0)||(i%3==0)) {
-				System.out.print(i+" ");
-			}
-			if(i%6==0) count++;
+			if((i%2==0)||(i%3==0)) System.out.print(i+" ");
+			if((i%2==0)&&(i%3==0)) count++;
 		}
 		System.out.println();
 		System.out.println("count : "+count);

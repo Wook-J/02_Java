@@ -3,6 +3,7 @@ package edu.kh.control.practice;
 public class Run2 {
 
 	public static void main(String[] args) {
+		
 		LoopPractice loop = new LoopPractice();
 		
 //		loop.practice1();			// 숫자를 입력받아 1부터 그 숫자까지 모두 출력
