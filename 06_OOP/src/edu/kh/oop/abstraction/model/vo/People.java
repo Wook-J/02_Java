@@ -58,7 +58,7 @@ public class People {		// 국민(사람) 클래스
 		// 매개변수 String name
 		// -> String 타입의 데이터를 전달받아 저장하고 있는 변수
 		
-		// ** this : 현재 객체(클래스)
+		// ** this : 현재 객체(클래스) (People 클래스를 통해 만들어진 p1 or wookjae 등...!)
 		this.name = name;
 	}
 
