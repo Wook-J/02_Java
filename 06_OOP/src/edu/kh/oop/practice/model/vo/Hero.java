@@ -24,7 +24,7 @@ public class Hero {
 		
 		// 메서드
 		System.out.println("=========== 캐릭터 생성 ===========");
-		System.out.printf("전사직업으로 '%s'님이 생성되었습니다\n", nickName);
+		System.out.printf("%s 직업으로 '%s'님이 생성되었습니다\n", job,nickName);
 		System.out.printf("현재 레벨 : %d\n", level);
 		System.out.printf("현재 hp : %d\n", hp);
 		System.out.printf("현재 mp : %d\n", mp);
