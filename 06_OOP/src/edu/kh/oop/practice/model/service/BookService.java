@@ -12,13 +12,13 @@ public class BookService {
 		System.out.println(book2.toString());
 		
 		System.out.println("================================");
-		System.out.println("수정된 결과 확인");
 		
 		book1.setTitle("C언어");
 		book1.setPrice(30000);
 		book1.setDiscountRate(0.1);
 		book1.setAuthor("홍길동");
 		
+		System.out.println("수정된 결과 확인");
 		System.out.println(book1.toString());
 		
 		System.out.println("================================");

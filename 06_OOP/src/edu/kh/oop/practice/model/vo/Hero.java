@@ -13,8 +13,8 @@ public class Hero {
 	// 생성자
 	public Hero() {}
 	public Hero(String nickName, String job, int hp, int mp, int level, double exp) {
-		// 필드, 멤버변수
-//		super();
+		// 필드, 멤버변수 초기화
+//		super();			// 상속관련된 것 이랬음
 		this.nickName = nickName;
 		this.job = job;
 		this.hp = hp;
@@ -22,13 +22,20 @@ public class Hero {
 		this.level = level;
 		this.exp = exp;
 		
-		// 메서드
-		System.out.println("=========== 캐릭터 생성 ===========");
-		System.out.printf("%s 직업으로 '%s'님이 생성되었습니다\n", job,nickName);
-		System.out.printf("현재 레벨 : %d\n", level);
-		System.out.printf("현재 hp : %d\n", hp);
-		System.out.printf("현재 mp : %d\n", mp);
-		System.out.printf("현재 경험치 : %.1f\n", exp);
+		// 캐릭터생성 시 나타나는 화면 메서드, printf 구문 1개로 해결 가능(선생님버전)
+		System.out.printf("=========== 캐릭터 생성 ===========\n"
+						+ "%s 직업으로 '%s'님이 생성되었습니다\n"
+						+ "현재 레벨 : %d\n"
+						+ "현재 hp : %d\n"
+						+ "현재 mp : %d\n"
+						+ "현재 경험치 : %.1f\n", job, nickName, level, hp, mp, exp);
+		
+//		System.out.println("=========== 캐릭터 생성 ===========");
+//		System.out.printf("%s 직업으로 '%s'님이 생성되었습니다\n", job,nickName);
+//		System.out.printf("현재 레벨 : %d\n", level);
+//		System.out.printf("현재 hp : %d\n", hp);
+//		System.out.printf("현재 mp : %d\n", mp);
+//		System.out.printf("현재 경험치 : %.1f\n", exp);
 	}
 	
 	// 메서드
@@ -38,16 +45,16 @@ public class Hero {
 		System.out.printf("'%s'은/는 공격을 했다!!! 현재 경험치 : %.1f\n", nickName, this.exp);
 		
 		if(this.exp>=300) {
-			this.level++;
-			System.out.println("레벨이 올랐습니다!! 현재 레벨 : " + this.level);
+			level++;
+			System.out.println("레벨이 올랐습니다!! 현재 레벨 : " + level);
 		}
 	}
 	
 	public void dash() {
-		mp -= 10;
-		System.out.printf("'%s'의 엄청 빠른 대시!!! 남은 마력 : %d\n", nickName, mp);
-		if(mp<=0) {
-			System.out.println("[마력부족]더 이상 대시 할 수 없어요~!");
+		if(mp<=0) System.out.println("[마력부족]더 이상 대시 할 수 없어요~!");
+		else {
+			mp -= 10;
+			System.out.printf("'%s'의 엄청 빠른 대시!!! 남은 마력 : %d\n", nickName, mp);
 		}
 	}
 	
@@ -58,8 +65,17 @@ public class Hero {
 			   "- 현재 hp : " + hp + "\n"+
 			   "- 현재 mp : " + mp + "\n"+
 			   "- 현재 exp : " + exp;
+		
+/*		(선생님버전) printf로 하려는 경우
+ * 		return "========'%s'님의 정보 ========\n" +
+ * 			   "- 현재 레벨 : %d\n" +
+ * 			   "- 현재 hp : %d\n" +
+ * 			   "- 현재 mp : %d\n" + 
+ * 			   "- 현재 exp : %.1f\n";
+ */
 	}
 	
+	// getter & setter 부분 ----------------------------------------------------------
 	public String getNickName() {
 		return nickName;
 	}

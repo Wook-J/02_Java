@@ -7,7 +7,7 @@ public class Book {
 	private double discountRate;	// 할인율
 	private String author;			// 저자명
 	
-	// 생성자
+	// 생성자 (Constructor)
 	public Book() {}				// ctrl + space -> enter : 기본생성자
 	
 	// alt + shift + s -> Generate Constructor using Fields.. -> generate : 매개변수 생성자
