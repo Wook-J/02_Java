@@ -86,8 +86,8 @@ public class MemberService {
 		// 입력받은 아이디, 비밀번호와 같으면 "로그인 성공"
 		// 하나라도 같지 않으면 "아이디 또는 비밀번호 불일치"
 		// -> 상세하게 풀어쓰면 아래와 같음
-		// 로그인하려고 입력받은 memberId와 memberInfo 필드에서 참조 중인 Member 객체의 memberId가 같은지 및
-		// 로그인하려고 입력받은 memberPw와 memberInfo 필드에서 참조 중인 Member 객체의 memberPw가 같은지 확인
+		// 로그인하려고 입력받은 (memberId)와 (memberInfo 필드에서 참조 중인 Member 객체의 memberId)가 같은지 및
+		// 로그인하려고 입력받은 (memberPw)와 (memberInfo 필드에서 참조 중인 Member 객체의 memberPw)가 같은지 확인
 		if( memberId.equals(memberInfo.getMemberId()) && memberPw.equals(memberInfo.getMemberPw()) ) {
 			
 			// loginMember에 memberInfo가 참조하고 있는 객체의 주소 대입 (얕은 복사)
