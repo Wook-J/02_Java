@@ -2,7 +2,7 @@ package edu.kh.oop.method.model.vo;
 
 public class Member {		// 속성 + 기능
 	
-	// 필드
+	// 필드 - 추상화, 캡슐화
 	private String memberId;	// 아이디
 	private String memberPw;	// 비밀번호
 	private String memberName;	// 이름
@@ -10,18 +10,16 @@ public class Member {		// 속성 + 기능
 	
 	// 생성자 : 오버로딩이 적용되어 같은 Member라도 오류 X (매개변수의 개수 or 타입 or 순서 다름)
 	public Member() {}		// 기본 생성자, ctrl + space -> enter
+	// 오버로딩 : 같은 이름의 메서드를 만들어 주는 것
 
 	public Member(String memberId, String memberPw, String memberName, int memberAge) {	//매개변수 생성자
-		this.memberId = memberId;
+		this.memberId = memberId;		// this 참조변수 : 해당 객체를 의미함!
 		this.memberPw = memberPw;
 		this.memberName = memberName;
 		this.memberAge = memberAge;
 	}
 
 	// 메서드
-	
-	
-	
 	
 	// getter, setter (메서드 종류 중 하나임!, 자동완성기능 있음 alt shift s)
 	public String getMemberId() {
