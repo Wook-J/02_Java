@@ -41,9 +41,9 @@ public class MemberService {
 			case 2: System.out.println( login() ); break;		// (4) 로그인 메서드
 			case 3: System.out.println( selectMember() ); break;// (5) 회원 정보 조회 메서드
 			case 4: 											// (6) 회원 정보 수정 메서드
-				int memberNum = updateMember();
-				if(memberNum == -1) System.out.println("로그인을 먼저 하세요!!\n");
-				else if(memberNum == 1) System.out.println("변경 성공!\n");
+				int result = updateMember();
+				if(result == -1) System.out.println("로그인을 먼저 하세요!!\n");
+				else if(result == 1) System.out.println("변경 성공!\n");
 				else System.out.println("변경 실패!!! 비밀번호 불일치\n");
 				break;					
 			case 5: searchRegion(); break;						// (7) 회원 검색(지역) 메서드
