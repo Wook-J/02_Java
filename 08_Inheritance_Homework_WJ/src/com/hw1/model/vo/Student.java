@@ -11,7 +11,7 @@ public class Student extends Person {
 
 	public Student(String name, int age, double height, double weight, int grade, String major) {
 		super(age, height, weight);
-		this.name = name;
+		this.name = name;		// protected 의 경우에는 this. 를 사용하여 대입가능!
 		this.grade = grade;
 		this.major = major;
 	}
@@ -20,6 +20,7 @@ public class Student extends Person {
 	@Override
 	public String information() {
 		return super.information() + " / 학년 : " + grade + " / 전공 : " + major;
+//		return super.information() + String.format(" / 학년 : %d / 전공 : %s", grade, major);
 	}
 
 	// getter, setter

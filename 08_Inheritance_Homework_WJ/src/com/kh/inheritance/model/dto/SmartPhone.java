@@ -19,9 +19,8 @@ public class SmartPhone extends Phone {
 	@Override
 	public void printInfo() {
 		super.printInfo();
-		System.out.printf("Operation System : %s\nStorage Capacity : %dGB\n", operatingSystem, storageCapacity);
+		System.out.printf("Operating System : %s\nStorage Capacity : %dGB\n", operatingSystem, storageCapacity);
 	}
-
 	
 	// getter, setter
 	public String getOperatingSystem() {

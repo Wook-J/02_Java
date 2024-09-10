@@ -20,6 +20,7 @@ public class Employee extends Person {
 	@Override
 	public String information() {
 		return super.information() + " / 급여 : " + salary + "원 / 부서 : " + dept;
+//		return super.information() + String.format(" / 급여 : % d / 부서 : %s", salary, dept);
 	}
 
 	// getter, setter
