@@ -14,6 +14,7 @@ public class Run {
 		ManagementSystem empSystem = new Company(10);
 		empSystem.addPerson(new Employee("EMP001", "유재석", "기획팀"));
 		empSystem.addPerson(new Employee("EMP002", "정형돈", "개발팀"));
+//		empSystem.addPerson(new Employee("EMP003", "하하", "총무팀"));
 		empSystem.displayAllPersons();
 		System.out.println("==================================================================");
 		
@@ -25,6 +26,8 @@ public class Run {
 		
 		empSystem.removePerson("EMP001");
 		priSystem.removePerson("1205");
+//		empSystem.removePerson("EMP001");
+//		empSystem.removePerson("EMP003");
 
 		System.out.println("==================================================================");
 		empSystem.displayAllPersons();
