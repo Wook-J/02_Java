@@ -19,6 +19,7 @@ public class TextBook extends Book {
 		String str = "[전문서적] 제목 : " + super.getTitle() + " / 저자 : " + super.getAuthor() + " / 과목 : " + subject;
 		System.out.println(str);
 	}
+	// super 안 써도 Book 에 있는 method 인 getTitle(), getAuthor() 쓸 수 있음!!
 	
 	// getter, setter
 	public String getSubject() {

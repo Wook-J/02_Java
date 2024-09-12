@@ -9,28 +9,27 @@ import com.hw2.model.service.Prison;
 public class Run {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		ManagementSystem empSystem = new Company(10);
-		empSystem.addPerson(new Employee("EMP001", "유재석", "기획팀"));
-		empSystem.addPerson(new Employee("EMP002", "정형돈", "개발팀"));
-//		empSystem.addPerson(new Employee("EMP003", "하하", "총무팀"));
-		empSystem.displayAllPersons();
+		// 부모타입 참조변수 = 자식객체 (업캐스팅)
+		ManagementSystem company = new Company(10);
+		company.addPerson(new Employee("EMP001", "유재석", "기획팀"));		// 다형성 중 업캐스팅 사용
+		company.addPerson(new Employee("EMP002", "정형돈", "개발팀"));		// 다형성 중 업캐스팅 사용
+		company.addPerson(new Employee("EMP003", "하하", "총무팀"));		// 다형성 중 업캐스팅 사용
+		company.displayAllPersons();										// 동적 바인딩
 		System.out.println("==================================================================");
 		
-		ManagementSystem priSystem = new Prison(10);
-		priSystem.addPerson(new Prisoner("1205", "정준하", "밥도둑"));
-		priSystem.addPerson(new Prisoner("0705", "박명수", "웃음연쇄살인"));
-		priSystem.displayAllPersons();
+		ManagementSystem prisoner = new Prison(10);
+		prisoner.addPerson(new Prisoner("1205", "정준하", "밥도둑"));		// 다형성 중 업캐스팅 사용
+		prisoner.addPerson(new Prisoner("0705", "박명수", "웃음연쇄살인"));	// 다형성 중 업캐스팅 사용
+		prisoner.displayAllPersons();										// 동적 바인딩
 		System.out.println("==================================================================");
 		
-		empSystem.removePerson("EMP001");
-		priSystem.removePerson("1205");
-//		empSystem.removePerson("EMP001");
-//		empSystem.removePerson("EMP003");
-
+		company.removePerson("EMP001");
+		prisoner.removePerson("1205");
+		company.removePerson("EMP001");
 		System.out.println("==================================================================");
-		empSystem.displayAllPersons();
-		priSystem.displayAllPersons();
+		
+		company.displayAllPersons();
+		prisoner.displayAllPersons();
 	}
 }

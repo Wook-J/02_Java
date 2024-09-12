@@ -14,7 +14,11 @@ public class Employee extends Person {
 	// 메서드
 	@Override
 	public String getInfo() {
-		return "ID : " + super.getId() + " , 이름 : " + super.getName() + " , 직책 : " + position;
+		return "ID : " + id + " , 이름 : " + name + " , 직책 : " + position;	
+//		id 와 name 을 Person 클래스에서 protected 로 만들어서 직접접근 가능!
+
+//		String.format() 사용하는 경우
+//		return String.format("ID : %s, 이름 : %s , 직책 : %s", id, name, position);
 	}
 
 	// getter, setter

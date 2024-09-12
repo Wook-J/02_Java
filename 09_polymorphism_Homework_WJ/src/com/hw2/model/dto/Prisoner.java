@@ -14,7 +14,11 @@ public class Prisoner extends Person {
 	// 메서드
 	@Override
 	public String getInfo() {
-		return "ID : " + super.getId() + " , 이름 : " + super.getName() + " , 죄목 : " + crime;
+		return "ID : " + id + " , 이름 : " + name + " , 죄목 : " + crime;
+//		id 와 name 을 Person 클래스에서 protected 로 만들어서 직접접근 가능!
+		
+//		String.format() 사용하는 경우
+//		return String.format("ID : %s, 이름 : %s , 죄목 : %s", id, name, crime);
 	}
 
 	// getter, setter
