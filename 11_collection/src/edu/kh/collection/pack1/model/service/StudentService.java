@@ -55,7 +55,7 @@ public class StudentService {
 		
 		// List.add(Object e) : 리스트에 객체를 추가
 		// * 매개변수 타입이 Object : 모든 객체를 매개변수로 전달할 수 있음
-		testList.add(new Student("홍길동", 25, "서울시 중구", 'M', 90));
+		testList.add(new Student("홍길동", 25, "서울시 중구", 'M', 90));	// Student 객체
 		testList.add("문자열");				// String 객체
 		testList.add(sc);					// Scanner 객체
 		testList.add(new Object());			// Object 객체

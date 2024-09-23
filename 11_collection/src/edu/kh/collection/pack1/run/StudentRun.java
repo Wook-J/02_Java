@@ -1,5 +1,9 @@
 package edu.kh.collection.pack1.run;
 
+//import java.util.ArrayList;
+//import java.util.Collections;
+//import java.util.List;
+
 import edu.kh.collection.pack1.model.service.StudentService;
 
 public class StudentRun {
@@ -8,6 +12,7 @@ public class StudentRun {
 
 		StudentService service = new StudentService();
 //		System.out.println(service);
+//		service.ex();
 		service.displayMenu();
 		
 //		List<Integer> numberList = new ArrayList<Integer>();
