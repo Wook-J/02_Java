@@ -41,7 +41,7 @@ public class Toy {
 	@Override
 	public String toString() {
 		return "이름 : " + name + " / 가격 : " + price + " / 색상 : " + color + " / 사용가능연령 : " + age +
-				" / 제조연월일 : " + day + " / 재료 : " + materialString;
+				" / 제조연월일 : " + day + " / 재료 : " + material();
 	} 
 	
 	@Override
