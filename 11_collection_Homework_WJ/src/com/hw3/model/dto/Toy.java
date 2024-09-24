@@ -12,9 +12,7 @@ public class Toy {
 	private String color;			// 색상
 	private String day;				// 제조년월일
 	private Set<String> materials;	// 재료
-	
-	private String materialString = "";	// toString용
-	
+
 	// 생성자
 	public Toy() {}	
 	public Toy(String name, int age, int price, String color, String day, Set<String> materials) {
@@ -31,10 +29,14 @@ public class Toy {
 	// 메서드
 	
 	public String material() {
+		
+		String materialString = "";		// 배열 형태로 toString 되는 대신 재료1, 재료2, ...로 print 하려는 경우
+		
 		for(String material : materials) {
 			if(materialString.length()==0) materialString += material;
-			else materialString = materialString + ", " + material;
+			else materialString += ", " + material;
 		}
+		
 		return materialString;
 	}
 	
