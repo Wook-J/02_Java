@@ -44,7 +44,7 @@ public class Zoo {
 				
 				switch(menuNum) {
 				case 1: showAnimals(); break;
-				case 2: menuNum = 2; break;
+				case 2: System.out.println("프로그램을 종료합니다."); break;
 				default : System.out.println("올바른 번호를 입력하세요\n"); break;
 				}	
 			}catch(InputMismatchException e ){

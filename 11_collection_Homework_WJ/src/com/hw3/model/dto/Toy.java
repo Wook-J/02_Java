@@ -33,17 +33,43 @@ public class Toy {
 		String materialString = "";		// 배열 형태로 toString 되는 대신 재료1, 재료2, ...로 print 하려는 경우
 		
 		for(String material : materials) {
-			if(materialString.length()==0) materialString += material;
+			if(materialString.length() == 0) materialString += material;
 			else materialString += ", " + material;
 		}
 		
 		return materialString;
 	}
 	
+	/** 아래 toString()에서 재료명 표기 시 사용(강사님 풀이 관련)
+	 * materials 안에 있는 모든 재료를 문자열 형태로 만들어 반환하는 메서드
+	 * @return toy 에 들어있는 모든 재료들
+	 */
+/*	private String getMaterialsAsString() {
+		
+		StringBuilder sb = new StringBuilder();		// 가변 문자열 객체(비동기)
+		
+		if(materials.size() == 0 ) {
+			return "없음";
+		}
+		
+		for(String material : materials) {
+			sb.append(material).append(", ");		// .append() : 문자열 뒤에 이어 쓰기
+		}
+		
+		sb.setLength(sb.length() - 2);		// 마지막 ", "를 삭제하는 방법!!!
+		return sb.toString();
+	}*/
+	
 	@Override
 	public String toString() {
+		
+		// 강사님 풀이
+//		return String.format("이름 : %s / 가격 : %d / 색상 : %s / 사용가능연령 : %d / 제조년원일 : %s / 재료 : %s", 
+//				name, price, color, age, day, getMaterialsAsString());
+		
+		// 내 풀이
 		return "이름 : " + name + " / 가격 : " + price + " / 색상 : " + color + " / 사용가능연령 : " + age +
-				" / 제조연월일 : " + day + " / 재료 : " + material();
+				" / 제조년월일 : " + day + " / 재료 : " + material();
 	} 
 	
 	@Override

@@ -1,0 +1,17 @@
+List.remove(int index) 
+- index 번호를 알아야 지울 수 있음
+- index 번호를 알기 때문에 정확한 요소를 지정하여 삭제 가능
+
+List.remove(Object o )
+- index 번호를 모를 때 사용
+- List에 중복된 요소가 있는 경우 처음 발견된 요소 하나만 제거됨
+
+List<Integer> list = new ArrayList<Integer>();
+list.add(1);	// 0번 인덱스
+list.add(2);	// 1번 인덱스
+list.add(3);	// 2번 인덱스
+
+list.remove(1);	// 1번 인덱스에 있는 요소(2)를 제거
+
+객체 1를 제거하고 싶으면 아래와 같이 적어야 함...!
+list.remove(Integer.valueOf(1));
