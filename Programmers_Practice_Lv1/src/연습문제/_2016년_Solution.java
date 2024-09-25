@@ -1,8 +1,8 @@
-package 연습문제_2016년;
+package 연습문제;
 
 import java.time.LocalDate;
 
-public class Solution {
+public class _2016년_Solution {
 	
     public String solution(int a, int b) {
     	String answer = "";
