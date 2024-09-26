@@ -2,7 +2,7 @@ package 연습문제;
 
 import java.time.LocalDate;
 
-public class _2016년_Solution {
+public class _2016년 {
 	
     public String solution(int a, int b) {
     	String answer = "";
