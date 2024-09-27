@@ -1,12 +1,80 @@
 package 연습문제;
 
+import java.util.Arrays;
+
 public class Run {
 
 	public static void main(String[] args) {
 		
-		정수_제곱근_판별 prob19 = new 정수_제곱근_판별();
-		System.out.println(prob19.solution(147));
-		System.out.println(prob19.solution(144));
+		덧칠하기 prob32 = new 덧칠하기();
+		int [] section1 = {2 ,3, 6};
+		int [] section2 = {1, 3};
+		int [] section3 = {1, 2 ,3, 4};
+		System.out.println(prob32.solution(8, 4, section1));
+		System.out.println(prob32.solution(5, 4, section2));
+		System.out.println(prob32.solution(4, 1, section3));
+		
+		
+//		추억_점수 prob31 = new 추억_점수();
+//		String[] name = {"may", "kein", "kain", "radi"};
+//		int[] yearing = {5, 10, 1, 3};
+//		String photo[][] = {{"may", "kein", "kain", "radi"},{"may", "kein", "brin", "deny"}, {"kon", "kain", "may", "coni"}};
+//		System.out.println(Arrays.toString(prob31.solution(name, yearing, photo)));
+		
+//		달리기_경주 prob30 = new 달리기_경주();
+//		String[] players = {"mumu", "soe", "poe", "kai", "mine"}; 
+//		String[] callings = {"kai", "kai", "mine", "mine"};
+//		System.out.println(Arrays.deepToString(prob30.solution2(players, callings)));
+		
+//		직사각형_별찍기 prob29 = new 직사각형_별찍기();
+		
+//		X만큼_간격이_있는_n개의_숫자 prob28 = new X만큼_간격이_있는_n개의_숫자();
+//		System.out.println(Arrays.toString(prob28.solution(2, 5)));
+//		System.out.println(Arrays.toString(prob28.solution(4, 3)));
+//		System.out.println(Arrays.toString(prob28.solution(-4, 2)));
+		
+//		행렬의_덧셈 prob27 = new 행렬의_덧셈();
+//		int [][] arr1 = {{1, 2}, {2, 3}};
+//		int [][] arr2 = {{3, 4}, {5, 6}};
+//		System.out.println(Arrays.deepToString(prob27.solution(arr1, arr2)));
+//		int [][] arr3 = {{1}, {2}};
+//		int [][] arr4 = {{3}, {4}};
+//		System.out.println(Arrays.deepToString(prob27.solution(arr3, arr4)));
+		
+//		핸드폰_번호_가리기 prob26 = new 핸드폰_번호_가리기();
+//		System.out.println(prob26.solution("01012345678"));
+//		System.out.println(prob26.solution2("027778888"));
+		
+//		하샤드_수 prob25 = new 하샤드_수();
+//		System.out.println(prob25.solution(10));
+//		System.out.println(prob25.solution2(12));
+//		System.out.println(prob25.solution(11));
+//		System.out.println(prob25.solution2(13));
+		
+//		평균_구하기 prob24 = new 평균_구하기();
+//		System.out.println(prob24.solution(new int[]{1, 2, 3, 4}));
+//		System.out.println(prob24.solution(new int[]{5, 5}));
+		
+//		콜라츠_추측 prob23 = new 콜라츠_추측();
+//		System.out.println(prob23.solution(6));
+//		System.out.println(prob23.solution(16));
+//		System.out.println(prob23.solution(626331));
+		
+//		최대공약수와_최소공배수 prob22 = new 최대공약수와_최소공배수();
+//		System.out.println(Arrays.toString(prob22.solution(10, 22)));
+//		System.out.println(Arrays.toString(prob22.solution(10, 15)));
+		
+//		짝수와_홀수 prob21 = new 짝수와_홀수();
+//		System.out.println(prob21.solution(23));
+//		System.out.println(prob21.solution(4));
+		
+//		제일_작은_수_제거하기 prob20 = new 제일_작은_수_제거하기();
+//		System.out.println(Arrays.toString(prob20.solution(new int[] {4, 3, 2, 1})));
+//		System.out.println(Arrays.toString(prob20.solution(new int[] {10})));
+		
+//		정수_제곱근_판별 prob19 = new 정수_제곱근_판별();
+//		System.out.println(prob19.solution(147));
+//		System.out.println(prob19.solution(144));
 		
 //		정수_내림차순으로_배치하기 prob18 = new 정수_내림차순으로_배치하기();
 //		System.out.println(prob18.solution(123432));

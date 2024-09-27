@@ -1,0 +1,4 @@
+TCP : 신뢰적인 전송방식, 실패시 재전송 기능 및 확인
+UDP : 비신뢰적인 전송방식, 단순히 보내기만
+
+HTTP, https : TCP 방식으로 만들어진 프로토콜(HyperText Transfer Protocol)
