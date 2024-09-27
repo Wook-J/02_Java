@@ -5,14 +5,28 @@ import java.util.Arrays;
 public class Run {
 
 	public static void main(String[] args) {
+		카드_뭉치 prob34 = new 카드_뭉치();		// 이거 아직 못품
+		String[] card1 = {"i", "water", "drink"};
+		String[] card2 = {"want", "to"};
+		String[] goal = {"i", "want", "to", "drink", "water"};
+		System.out.println(prob34.solution(card1, card2, goal));
 		
-		덧칠하기 prob32 = new 덧칠하기();
-		int [] section1 = {2 ,3, 6};
-		int [] section2 = {1, 3};
-		int [] section3 = {1, 2 ,3, 4};
-		System.out.println(prob32.solution(8, 4, section1));
-		System.out.println(prob32.solution(5, 4, section2));
-		System.out.println(prob32.solution(4, 1, section3));
+		
+//		대충_만든_자판 prob33 = new 대충_만든_자판();
+//		String[] keymap = {"ABACD", "BCEFD"};
+//		String[] targets = {"ABCD", "AABB"};
+//		System.out.println(Arrays.toString(prob33.solution2(keymap, targets)));
+//		String[] keymap2 = {"AA"};
+//		String[] targets2 = {"B"};
+//		System.out.println(Arrays.toString(prob33.solution(keymap2, targets2)));
+		
+//		덧칠하기 prob32 = new 덧칠하기();
+//		int [] section1 = {2 ,3, 6};
+//		int [] section2 = {1, 3};
+//		int [] section3 = {1, 2 ,3, 4};
+//		System.out.println(prob32.solution(8, 4, section1));
+//		System.out.println(prob32.solution(5, 4, section2));
+//		System.out.println(prob32.solution(4, 1, section3));
 		
 		
 //		추억_점수 prob31 = new 추억_점수();
