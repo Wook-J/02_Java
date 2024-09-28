@@ -18,7 +18,6 @@ public class 대충_만든_자판 {
 		List<String[]> targetList = new ArrayList<String[]>();
 		for(String str :targets) targetList.add(str.split(""));
 		
-		
 		// keymap : [ABACD, BCEFD], targets : [ABCD, AABB] 인 경우
 		for(String[] targetArr : targetList) {
 			

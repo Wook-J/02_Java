@@ -5,11 +5,24 @@ import java.util.Arrays;
 public class Run {
 
 	public static void main(String[] args) {
-		카드_뭉치 prob34 = new 카드_뭉치();		// 이거 아직 못품
-		String[] card1 = {"i", "water", "drink"};
-		String[] card2 = {"want", "to"};
-		String[] goal = {"i", "want", "to", "drink", "water"};
-		System.out.println(prob34.solution(card1, card2, goal));
+		
+		가장_가까운_같은_글자 prob37 = new 가장_가까운_같은_글자();
+		System.out.println(Arrays.toString(prob37.solution("banana"	)));
+		
+//		크기가_작은_부분_문자열 prob36 = new 크기가_작은_부분_문자열();
+//		System.out.println(prob36.solution("3141592", "271"));
+//		System.out.println(prob36.solution("500220839878", "7"));
+//		System.out.println(prob36.solution2("10203", "15"));
+		
+//		둘만의_암호 prob35 = new 둘만의_암호();
+//		System.out.println(prob35.solution("aukks", "wbqd", 5));
+		
+//		카드_뭉치 prob34 = new 카드_뭉치();
+//		String[] card1 = {"i", "drink",  "water"};
+////		String[] card1 = {"i", "water", "drink"};
+//		String[] card2 = {"want", "to"};
+//		String[] goal = {"i", "want", "to", "drink", "water"};
+//		System.out.println(prob34.solution2(card1, card2, goal));
 		
 		
 //		대충_만든_자판 prob33 = new 대충_만든_자판();
