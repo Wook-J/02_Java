@@ -5,9 +5,13 @@ import java.util.Arrays;
 public class Run {
 
 	public static void main(String[] args) {
+
+		기사단원의_무기 prob38 = new 기사단원의_무기();
+		System.out.println(prob38.solution(5, 3, 2));
+		System.out.println(prob38.solution(9, 3, 2));
 		
-		가장_가까운_같은_글자 prob37 = new 가장_가까운_같은_글자();
-		System.out.println(Arrays.toString(prob37.solution("banana"	)));
+//		가장_가까운_같은_글자 prob37 = new 가장_가까운_같은_글자();
+//		System.out.println(Arrays.toString(prob37.solution("banana"	)));
 		
 //		크기가_작은_부분_문자열 prob36 = new 크기가_작은_부분_문자열();
 //		System.out.println(prob36.solution("3141592", "271"));
