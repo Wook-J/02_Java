@@ -6,9 +6,15 @@ public class Run {
 
 	public static void main(String[] args) {
 
-		기사단원의_무기 prob38 = new 기사단원의_무기();
-		System.out.println(prob38.solution(5, 3, 2));
-		System.out.println(prob38.solution(9, 3, 2));
+		푸드_파이트_대회 prob40 = new 푸드_파이트_대회();
+		System.out.println(prob40.solution(new int[] {1, 3, 4, 6}));
+		
+//		명예의_전당_1 prob39 = new 명예의_전당_1();
+//		System.out.println(Arrays.toString(prob39.solution(3, new int[] {10, 100, 20, 150, 1, 100, 200})));
+		
+//		기사단원의_무기 prob38 = new 기사단원의_무기();
+//		System.out.println(prob38.solution(5, 3, 2));
+//		System.out.println(prob38.solution(9, 3, 2));
 		
 //		가장_가까운_같은_글자 prob37 = new 가장_가까운_같은_글자();
 //		System.out.println(Arrays.toString(prob37.solution("banana"	)));
