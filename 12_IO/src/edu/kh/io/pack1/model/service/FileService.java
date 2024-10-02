@@ -88,7 +88,7 @@ public class FileService {
 			
 			System.out.println(directory.getName());		// 20240926
 			System.out.println(directory.getPath());		// \io_test\20240926
-		}
+		}else System.out.println("이미 폴더가 존재합니다.");
 	}
 	
 	/**
@@ -96,7 +96,7 @@ public class FileService {
 	 */
 	public void method2() {
 		// Java 에서 역슬래시(\)는 이스케이프 문자로 사용됨
-		// -> /n 줄바꿈, \t 탭 과 같이 특정 문자 뒤에 특별한 의미를 부여하는 역할을 함
+		// -> \n 줄바꿈, \t 탭 과 같이 특정 문자 뒤에 특별한 의미를 부여하는 역할을 함
 		// -> 역슬래시 자체를 문자로 사용하고 싶을 땐 2개를 사용!!! \\
 		
 		// 문자열에서 "\"를 표기하는 방법 : "\\"
@@ -113,7 +113,7 @@ public class FileService {
 			} catch (IOException e) {
 				e.printStackTrace();	// 예외 정보 + 예외가 발생한 위치까지의 메서드 추적
 			}
-		}
+		} 
 	}
 	
 	/**
