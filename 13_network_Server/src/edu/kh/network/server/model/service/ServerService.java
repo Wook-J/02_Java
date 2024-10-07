@@ -13,7 +13,8 @@ import java.util.Scanner;
 
 public class ServerService {
 
-	// TCP Socket 프로그래밍
+	// TCP(Transmission Control Protocol) Socket 프로그래밍
+	// vs UDP(User Datagram Protocol)
 	
 	/* TCP : 서버와 클라이언트 간 1:1 소켓통신 (연결지향적 프로토콜)
 	 * - 서버가 먼저 실행되어 있는 상태에서 클라이언트가 연결해야 함
