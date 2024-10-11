@@ -17,7 +17,7 @@ public class 추억_점수 {
 		System.out.println(nameMap);						// nameMap 확인용
 		
 		for(String[] names :photo) {
-			System.out.println(Arrays.toString(names));		// names 확인용
+			System.out.println("names : " + Arrays.toString(names));		// names 확인용
 			
 			for(String str :names) {
 				if(nameMap.containsKey(str)) {

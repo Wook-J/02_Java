@@ -6,8 +6,19 @@ public class Run {
 
 	public static void main(String[] args) {
 
-		푸드_파이트_대회 prob40 = new 푸드_파이트_대회();
-		System.out.println(prob40.solution(new int[] {1, 3, 4, 6}));
+		바탕화면_정리 prob41 = new 바탕화면_정리();
+		String[] wallpaper1 = {".#...", "..#..", "...#."};
+		String[] wallpaper2 = {"..........", ".....#....", "......##..", "...##.....", "....#....."};
+		String[] wallpaper3 = {".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."};
+		String[] wallpaper4 = {"..", "#."};
+		System.out.println(Arrays.toString(prob41.solution(wallpaper1)));
+		System.out.println(Arrays.toString(prob41.solution(wallpaper2)));
+		System.out.println(Arrays.toString(prob41.solution(wallpaper3)));
+		System.out.println(Arrays.toString(prob41.solution(wallpaper4)));
+		
+		
+//		푸드_파이트_대회 prob40 = new 푸드_파이트_대회();
+//		System.out.println(prob40.solution(new int[] {1, 3, 4, 6}));
 		
 //		명예의_전당_1 prob39 = new 명예의_전당_1();
 //		System.out.println(Arrays.toString(prob39.solution(3, new int[] {10, 100, 20, 150, 1, 100, 200})));
