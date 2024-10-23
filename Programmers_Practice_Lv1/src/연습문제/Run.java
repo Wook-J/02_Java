@@ -5,16 +5,27 @@ import java.util.Arrays;
 public class Run {
 
 	public static void main(String[] args) {
+		
+		햄버거_만들기 prob43 = new 햄버거_만들기();
+		int[] ingredient = {2, 1, 1, 2, 3, 1, 2, 3, 1};
+		System.out.println(prob43.solution(ingredient));
+		int[] ingredient2 = {1, 3, 2, 1, 2, 1, 3, 1, 2};
+		System.out.println(prob43.solution(ingredient2));
+		
+//		문자열_나누기 prob42 = new 문자열_나누기();
+//		System.out.println(prob42.solution("banana"));
+//		System.out.println(prob42.solution("abracadabra"));
+//		System.out.println(prob42.solution("aaabbaccccabba"));
 
-		바탕화면_정리 prob41 = new 바탕화면_정리();
-		String[] wallpaper1 = {".#...", "..#..", "...#."};
-		String[] wallpaper2 = {"..........", ".....#....", "......##..", "...##.....", "....#....."};
-		String[] wallpaper3 = {".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."};
-		String[] wallpaper4 = {"..", "#."};
-		System.out.println(Arrays.toString(prob41.solution(wallpaper1)));
-		System.out.println(Arrays.toString(prob41.solution(wallpaper2)));
-		System.out.println(Arrays.toString(prob41.solution(wallpaper3)));
-		System.out.println(Arrays.toString(prob41.solution(wallpaper4)));
+//		바탕화면_정리 prob41 = new 바탕화면_정리();
+//		String[] wallpaper1 = {".#...", "..#..", "...#."};
+//		String[] wallpaper2 = {"..........", ".....#....", "......##..", "...##.....", "....#....."};
+//		String[] wallpaper3 = {".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."};
+//		String[] wallpaper4 = {"..", "#."};
+//		System.out.println(Arrays.toString(prob41.solution(wallpaper1)));
+//		System.out.println(Arrays.toString(prob41.solution(wallpaper2)));
+//		System.out.println(Arrays.toString(prob41.solution(wallpaper3)));
+//		System.out.println(Arrays.toString(prob41.solution(wallpaper4)));
 		
 		
 //		푸드_파이트_대회 prob40 = new 푸드_파이트_대회();
