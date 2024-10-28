@@ -9,8 +9,8 @@ public class Run {
 		햄버거_만들기 prob43 = new 햄버거_만들기();
 		int[] ingredient = {2, 1, 1, 2, 3, 1, 2, 3, 1};
 		System.out.println(prob43.solution(ingredient));
-		int[] ingredient2 = {1, 3, 2, 1, 2, 1, 3, 1, 2};
-		System.out.println(prob43.solution(ingredient2));
+//		int[] ingredient2 = {1, 3, 2, 1, 2, 1, 3, 1, 2};
+//		System.out.println(prob43.solution(ingredient2));
 		
 //		문자열_나누기 prob42 = new 문자열_나누기();
 //		System.out.println(prob42.solution("banana"));
