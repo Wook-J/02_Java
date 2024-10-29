@@ -6,11 +6,12 @@ public class Run {
 
 	public static void main(String[] args) {
 		
-		햄버거_만들기 prob43 = new 햄버거_만들기();
-		int[] ingredient = {2, 1, 1, 2, 3, 1, 2, 3, 1};
-		System.out.println(prob43.solution(ingredient));
+//		햄버거_만들기 prob43 = new 햄버거_만들기();
+//		int[] ingredient = {2, 1, 1, 2, 3, 1, 2, 3, 1};
+//		System.out.println("answer : " + prob43.solution(ingredient));
+//		System.out.println("===========================================");
 //		int[] ingredient2 = {1, 3, 2, 1, 2, 1, 3, 1, 2};
-//		System.out.println(prob43.solution(ingredient2));
+//		System.out.println("answer : " + prob43.solution(ingredient2));
 		
 //		문자열_나누기 prob42 = new 문자열_나누기();
 //		System.out.println(prob42.solution("banana"));
