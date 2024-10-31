@@ -5,15 +5,26 @@ import java.util.Arrays;
 public class Run {
 
 	public static void main(String[] args) {
-		신고_결과_받기 prob2 = new 신고_결과_받기();
 		
-		String[] idList = {"muzi", "frodo", "apeach", "neo"};
-		String[] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
-		int k = 2;
-//		String[] idList = {"con", "ryan"};
-//		String[] report = {"ryan con", "ryan con", "ryan con", "ryan con"};
-//		int k = 3;
-		System.out.println(Arrays.toString(prob2.solution(idList, report, k)));
+		실패율 prob4 = new 실패율();
+		int N = 5;
+		int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+		
+		System.out.println(Arrays.toString(prob4.solution(N, stages)));
+		
+//		신규_아이디_추천 prob3 = new 신규_아이디_추천();
+//		String new_id ="...!@BaT#*..y.abcdefghijklm";
+//		System.out.println(prob3.solution(new_id));
+		
+//		신고_결과_받기 prob2 = new 신고_결과_받기();
+//		String[] idList = {"muzi", "frodo", "apeach", "neo"};
+//		String[] report = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
+//		int k = 2;
+//		System.out.println(Arrays.toString(prob2.solution(idList, report, k)));
+//		String[] idList2 = {"con", "ryan"};
+//		String[] report2 = {"ryan con", "ryan con", "ryan con", "ryan con"};
+//		int k2 = 3;
+//		System.out.println(Arrays.toString(prob2.solution(idList2, report2, k2)));
 		
 //		개인정보_수집_유효기간 prob1 = new 개인정보_수집_유효기간();
 //		String today = "2022.05.19";
