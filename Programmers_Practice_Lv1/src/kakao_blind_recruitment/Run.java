@@ -6,11 +6,27 @@ public class Run {
 
 	public static void main(String[] args) {
 		
-		실패율 prob4 = new 실패율();
-		int N = 5;
-		int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+		비밀지도 prob6 = new 비밀지도();
+		int n = 5;
+		int[] arr1 = {9, 20, 28, 18, 11};
+		int[] arr2 = {30, 1, 21, 17, 28};
+		System.out.println(Arrays.toString(prob6.solution(n, arr1, arr2)));
+		int n2 = 6;
+		int[] arr12 = {46, 33, 33 ,22, 31, 50};
+		int[] arr22 = {27 ,56, 19, 14, 14, 10};
+		System.out.println(Arrays.toString(prob6.solution(n2, arr12, arr22)));
 		
-		System.out.println(Arrays.toString(prob4.solution(N, stages)));
+//		다트_게임 prob5 = new 다트_게임();
+//		String dartResult = "1S2D*3T";
+//		System.out.println(prob5.solution(dartResult));
+		
+//		실패율 prob4 = new 실패율();
+//		int N = 5;
+//		int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+//		System.out.println(Arrays.toString(prob4.solution(N, stages)));
+//		int N2 = 4;
+//		int[] stages2 = {4, 4, 4, 4};
+//		System.out.println(Arrays.toString(prob4.solution(N2, stages2)));
 		
 //		신규_아이디_추천 prob3 = new 신규_아이디_추천();
 //		String new_id ="...!@BaT#*..y.abcdefghijklm";
