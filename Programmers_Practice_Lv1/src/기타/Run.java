@@ -6,11 +6,25 @@ public class Run {
 
 	public static void main(String[] args) {
 		
-		두_개_뽑아서_더하기 prob7 = new 두_개_뽑아서_더하기();
-		int[] numbers = {2, 1, 3, 4, 1};
-		System.out.println(Arrays.toString(prob7.solution(numbers)));
-		int[] numbers2 = {5, 0, 2, 7};
-		System.out.println(Arrays.toString(prob7.solution(numbers2)));
+		모의고사 prob10 = new 모의고사();
+		int[] answers = {1, 2, 3, 4, 5};
+		System.out.println(Arrays.toString(prob10.solution(answers)));
+		
+//		K번째수 prob9 = new K번째수();
+//		int[] array = {1, 5, 2, 6, 3, 7, 4};
+//		int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+//		System.out.println(Arrays.toString(prob9.solution(array, commands)));
+		
+//		_3진법_뒤집기 prob8 = new _3진법_뒤집기();
+//		System.out.println(prob8.solution(45));
+//		System.out.println(prob8.solution2(45));
+//		System.out.println(prob8.solution(125));
+		
+//		두_개_뽑아서_더하기 prob7 = new 두_개_뽑아서_더하기();
+//		int[] numbers = {2, 1, 3, 4, 1};
+//		System.out.println(Arrays.toString(prob7.solution(numbers)));
+//		int[] numbers2 = {5, 0, 2, 7};
+//		System.out.println(Arrays.toString(prob7.solution(numbers2)));
 		
 //		내적 prob6 = new 내적();
 //		int[] a = {1, 2, 3, 4};
