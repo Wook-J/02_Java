@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class 모의고사 {
 
 	public int[] solution(int[] answers) {
+		boolean[] ansArr = new boolean[3];
+		
 		int[] person1 = new int[answers.length];
 		int person1Answer = 0;
 		for(int i=0; i<person1.length; i++) {
