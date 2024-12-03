@@ -6,11 +6,17 @@ public class Run {
 
 	public static void main(String[] args) {
 		
-		모의고사 prob10 = new 모의고사();
-		int[] answers = {1, 2, 3, 4, 5};
-		System.out.println(Arrays.toString(prob10.solution(answers)));
-		int[] answers2 = {1, 3, 2, 4, 2};
-		System.out.println(Arrays.toString(prob10.solution(answers2)));
+		TestSTS sample = new TestSTS();
+		System.out.println(sample.unitPrice("31.9원/개"));
+		System.out.println(sample.volume("11.8ml"));
+		System.out.println(sample.volume("13개"));
+		System.out.println(sample.volume("21g"));
+		
+//		모의고사 prob10 = new 모의고사();
+//		int[] answers = {1, 2, 3, 4, 5};
+//		System.out.println(Arrays.toString(prob10.solution(answers)));
+//		int[] answers2 = {1, 3, 2, 4, 2};
+//		System.out.println(Arrays.toString(prob10.solution(answers2)));
 		
 //		K번째수 prob9 = new K번째수();
 //		int[] array = {1, 5, 2, 6, 3, 7, 4};

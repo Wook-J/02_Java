@@ -1,11 +1,12 @@
 package 기타;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class 모의고사 {
 
 	public int[] solution(int[] answers) {
-		boolean[] ansArr = new boolean[3];
 		
 		int[] person1 = new int[answers.length];
 		int person1Answer = 0;
@@ -43,11 +44,27 @@ public class 모의고사 {
 			if(person3[i]==answers[i]) person3Answer++;
 		}
 		
-		System.out.println("person1 정답 개수 : " + person1Answer);
-		System.out.println("person2 정답 개수 : " + person2Answer);
-		System.out.println("person3 정답 개수 : " + person3Answer);
+		int[] answerPerson = {person1Answer, person2Answer, person3Answer};
+		int maxNum = person1Answer;
+		for(int personAns : answerPerson) {
+			if(maxNum < personAns) maxNum = personAns;
+		}
 		
-		int[] answer = {};
+//		System.out.println("person1 정답 개수 : " + person1Answer);
+//		System.out.println("person2 정답 개수 : " + person2Answer);
+//		System.out.println("person3 정답 개수 : " + person3Answer);
+
+		List<Integer> answerList = new ArrayList<Integer>();
+		
+		for(int i=0; i<answerPerson.length; i++) {
+			if(answerPerson[i] == maxNum) answerList.add(i+1);
+		}
+		
+//		System.out.println("answerList : " + answerList);
+//		System.out.println(Arrays.toString( answerList.toArray() ));
+		
+		int[] answer = new int[answerList.size()];
+		for(int i=0; i<answer.length; i++) answer[i] = answerList.get(i);
 		return answer;
 	}
 	
